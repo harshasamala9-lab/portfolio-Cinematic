@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SriHarsha Samala — Developer, AI Enthusiast &amp; Builder</title>
+  <meta name="description" content="The portfolio of SriHarsha Samala, a computer science student in Vijayawada exploring web development, AI-powered applications, and the craft of building through experimentation.">
+  <meta name="theme-color" content="#070707">
+  <meta property="og:title" content="SriHarsha Samala — Developer, AI Enthusiast &amp; Builder">
+  <meta property="og:description" content="I turn ideas into digital experiences, explore AI-powered systems, and learn by building real projects.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="vendor/fonts/bodoni-moda-normal-400_900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="vendor/fonts/sora-normal-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="vendor/fonts/fonts-local.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="page-ambient" aria-hidden="true"></div>
+  <div class="page-grain" aria-hidden="true"></div>
+  <div class="page-vignette" aria-hidden="true"></div>
+  <div class="cursor-aurora" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="SriHarsha Samala — back to top">
+        <span class="brand-mark" aria-hidden="true">SS</span>
+        <span class="brand-type">SriHarsha <span>Samala</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary">
+        <a class="nav-link" href="#about"><span>01</span>About</a>
+        <a class="nav-link" href="#toolkit"><span>02</span>Toolkit</a>
+        <a class="nav-link" href="#work"><span>03</span>Work</a>
+        <a class="nav-link" href="#journey"><span>04</span>Journey</a>
+        <a class="nav-link" href="#contact"><span>05</span>Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="header-cta" href="#contact">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Let's connect</span>
+          <svg class="icon-arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="menu-toggle-label" aria-hidden="true">Menu</span>
+          <span class="menu-bars" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-menu-bg" aria-hidden="true"></div>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a class="mobile-link" href="#home"><span>00</span><strong>Home</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+        <a class="mobile-link" href="#about"><span>01</span><strong>About</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+        <a class="mobile-link" href="#toolkit"><span>02</span><strong>Toolkit</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+        <a class="mobile-link" href="#work"><span>03</span><strong>Work</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+        <a class="mobile-link" href="#journey"><span>04</span><strong>Journey</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+        <a class="mobile-link" href="#contact"><span>05</span><strong>Contact</strong><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6"/></svg></a>
+      </nav>
+      <div class="mobile-menu-foot">
+        <p>Still learning. Always building.</p>
+        <a href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <span class="hero-glow hero-glow-a"></span>
+        <span class="hero-glow hero-glow-b"></span>
+        <span class="hero-horizon"></span>
+      </div>
+
+      <div class="hero-scene" aria-hidden="true">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-fallback">
+          <span class="fallback-ring fallback-ring-a"></span>
+          <span class="fallback-ring fallback-ring-b"></span>
+          <span class="fallback-ring fallback-ring-c"></span>
+          <span class="fallback-core"></span>
+          <span class="fallback-halo"></span>
+        </div>
+        <div class="hero-hud">
+          <div class="hud-corners"><i></i><i></i><i></i><i></i></div>
+          <p class="hud-label">OBJECT_01</p>
+          <p class="hud-value">CURIOSITY CORE</p>
+          <p class="hud-meta">FORM / IDEA<br>MATTER / CODE</p>
+        </div>
+      </div>
+
+      <div class="hero-inner page-width">
+        <div class="hero-content">
+          <p class="hero-eyebrow" data-hero>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Portfolio / 2026</span>
+            <span class="eyebrow-rule" aria-hidden="true"></span>
+            <span>Vijayawada, India</span>
+          </p>
+
+          <h1 class="hero-title" id="hero-title">
+            <span class="hero-title-mask"><span class="hero-title-line">SriHarsha</span></span>
+            <span class="hero-title-mask hero-title-mask--last"><span class="hero-title-line hero-title-line--italic">Samala</span></span>
+          </h1>
+
+          <p class="hero-role" data-hero>Developer. <em>AI Enthusiast.</em> Builder of Ideas.</p>
+
+          <p class="hero-lede" data-hero>I turn ideas into digital experiences, explore AI-powered systems, and learn by building real projects. Every experiment brings me closer to creating something meaningful.</p>
+
+          <div class="hero-actions" data-hero>
+            <a class="btn btn-primary" href="#work">
+              <span>Explore My Projects</span>
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M6 4h8v8"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#journey">
+              <span>Discover My Journey</span>
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 3v12M4 10l5 5 5-5"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-foot page-width">
+        <div class="hero-meta" data-hero>
+          <span>B.Tech CSE <i>/</i> 2nd Year</span>
+          <span>Student ID <i>/</i> 25NA1A0547</span>
+          <span>Andhra Pradesh <i>/</i> India</span>
+        </div>
+        <a class="scroll-cue" href="#about" aria-label="Scroll to the about section">
+          <span>Scroll to explore</span>
+          <span class="scroll-cue-track" aria-hidden="true"><i></i></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="page-width">
+        <header class="section-head">
+          <p class="section-index"><span>01</span> Profile</p>
+          <h2 class="section-title" id="about-title">Beyond<br><em>the code.</em></h2>
+          <p class="section-note">The person, the practice, and the point of view behind the projects.</p>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="about-lead reveal">I am SriHarsha Samala, a computer science student passionate about web development, AI-powered applications, and building technology through practical experimentation.</p>
+            <p class="about-paragraph reveal">I enjoy exploring new tools, connecting APIs, developing interfaces, and turning ambitious ideas into working software.</p>
+            <p class="about-paragraph reveal">My development journey has taught me that progress comes from curiosity, persistence, debugging, and the willingness to start again when something fails.</p>
+
+            <dl class="profile-facts reveal">
+              <div class="profile-fact">
+                <dt>Name</dt>
+                <dd>SriHarsha Samala</dd>
+              </div>
+              <div class="profile-fact">
+                <dt>Education</dt>
+                <dd>B.Tech Computer Science and Engineering<br><span>2nd Year</span></dd>
+              </div>
+              <div class="profile-fact">
+                <dt>Student ID</dt>
+                <dd>25NA1A0547</dd>
+              </div>
+              <div class="profile-fact">
+                <dt>Location</dt>
+                <dd>Vijayawada, Andhra Pradesh<br><span>India</span></dd>
+              </div>
+              <div class="profile-fact profile-fact--wide">
+                <dt>GitHub</dt>
+                <dd><a class="inline-link" href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">25na1a0547lingayas-collab <span aria-hidden="true">↗</span></a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <figure class="about-visual">
+            <div class="visual-frame" data-tilt data-tilt-max="3">
+              <div class="workspace-view">
+                <canvas id="about-canvas" aria-hidden="true"></canvas>
+                <div class="workspace-fallback" aria-hidden="true">
+                  <div class="fallback-window fallback-editor">
+                    <div class="fallback-bar"><span><i></i><i></i><i></i></span><small>workspace / ideas.js</small><b>— □ ×</b></div>
+                    <pre><code><span>01</span>const developer = {
+<span>02</span>  name: 'SriHarsha',
+<span>03</span>  focus: ['web', 'ai'],
+<span>04</span>  approach: 'keep building',
+<span>05</span>};
+<span>06</span>
+<span>07</span>while (!understood) {
+<span>08</span>  learn();
+<span>09</span>  experiment();
+<span>10</span>  reflect();
+<span>11</span>}</code></pre>
+                  </div>
+                  <div class="fallback-window fallback-terminal">
+                    <div class="fallback-bar"><span><i></i><i></i><i></i></span><small>workspace / terminal</small><b>— □ ×</b></div>
+                    <p><span>→</span> build an idea</p>
+                    <p class="muted-line">compiling perspective...</p>
+                    <p class="success-line">ready to iterate<span class="terminal-caret"></span></p>
+                  </div>
+                  <div class="fallback-window fallback-focus">
+                    <small>CURRENT STATE</small>
+                    <p>Learning in public.<br>Building in private.<br>Sharing what works.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="visual-chrome" aria-hidden="true">
+                <span>WORKSPACE / LIVE</span>
+                <span class="visual-dot"></span>
+                <span>WEBGL</span>
+              </div>
+              <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
+              <span class="frame-corner frame-corner--tr" aria-hidden="true"></span>
+              <span class="frame-corner frame-corner--bl" aria-hidden="true"></span>
+              <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
+            </div>
+            <figcaption>Inside the workspace — a digital desk built from curiosity, iteration, and code.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section toolkit" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="page-width">
+        <header class="section-head">
+          <p class="section-index"><span>02</span> Toolkit</p>
+          <h2 class="section-title" id="toolkit-title">Technical<br><em>toolkit.</em></h2>
+          <p class="section-note">Languages, frameworks, and environments I have used while learning, experimenting, and building. No rankings — just tools in practice.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-card--frontend reveal" data-tilt data-tilt-max="5" style="--span: 5">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="3" y="5" width="26" height="22" rx="1"/><path d="M3 11h26M8 8h.01M11 8h.01M14 8h.01"/><path d="M9 16h6M9 20h10"/></svg>
+              </span>
+              <span class="skill-number">01</span>
+            </div>
+            <div class="skill-body">
+              <p class="skill-overline">Surface</p>
+              <h3>Frontend <em>development</em></h3>
+              <ul class="skill-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>React.js <span>(Basics)</span></li>
+              </ul>
+            </div>
+            <p class="card-caption">Interfaces / interaction / responsive design</p>
+          </article>
+
+          <article class="skill-card skill-card--languages reveal" data-tilt data-tilt-max="5" style="--span: 3">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><path d="m11 9-7 7 7 7M21 9l7 7-7 7M18 5l-4 22"/></svg>
+              </span>
+              <span class="skill-number">02</span>
+            </div>
+            <div class="skill-body">
+              <p class="skill-overline">Logic</p>
+              <h3>Programming <em>languages</em></h3>
+              <ul class="skill-list">
+                <li>Python</li>
+                <li>Java</li>
+              </ul>
+            </div>
+            <p class="card-caption">Problem solving / fundamentals</p>
+          </article>
+
+          <article class="skill-card skill-card--backend reveal" data-tilt data-tilt-max="5" style="--span: 4">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><rect x="4" y="5" width="24" height="7" rx="1"/><rect x="4" y="15" width="24" height="7" rx="1"/><path d="M4 25h24M9 8.5h.01M9 18.5h.01M15 18.5h7M15 8.5h7"/></svg>
+              </span>
+              <span class="skill-number">03</span>
+            </div>
+            <div class="skill-body">
+              <p class="skill-overline">Connection</p>
+              <h3>Backend &amp; <em>APIs</em></h3>
+              <ul class="skill-list">
+                <li>Node.js</li>
+                <li>FastAPI</li>
+                <li>REST API integration</li>
+              </ul>
+            </div>
+            <p class="card-caption">Services / data flow / integration</p>
+          </article>
+
+          <article class="skill-card skill-card--data reveal" data-tilt data-tilt-max="5" style="--span: 4">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><ellipse cx="16" cy="8" rx="10" ry="4"/><path d="M6 8v8c0 2.2 4.5 4 10 4s10-1.8 10-4V8"/><path d="M6 16v8c0 2.2 4.5 4 10 4s10-1.8 10-4v-8"/></svg>
+              </span>
+              <span class="skill-number">04</span>
+            </div>
+            <div class="skill-body">
+              <p class="skill-overline">Structure</p>
+              <h3>Data<em>bases</em></h3>
+              <ul class="skill-list">
+                <li>SQL</li>
+                <li>MySQL</li>
+                <li>SQLite</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <p class="card-caption">Models / queries / persistence</p>
+          </article>
+
+          <article class="skill-card skill-card--ai reveal" data-tilt data-tilt-max="3" style="--span: 8">
+            <div class="skill-top">
+              <span class="skill-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="4"/><ellipse cx="16" cy="16" rx="13" ry="6" transform="rotate(30 16 16)"/><ellipse cx="16" cy="16" rx="13" ry="6" transform="rotate(-30 16 16)"/><path d="M16 2v4M16 26v4M2 16h4M26 16h4"/></svg>
+              </span>
+              <span class="skill-number">05</span>
+            </div>
+            <div class="skill-body">
+              <p class="skill-overline">Exploration</p>
+              <h3>AI &amp; development <em>tools</em></h3>
+              <ul class="skill-list skill-list--wide">
+                <li>AI-assisted development</li>
+                <li>Ollama &amp; local AI experimentation</li>
+                <li>Git &amp; GitHub</li>
+                <li>VS Code</li>
+                <li>Linux</li>
+                <li>Docker</li>
+                <li>Next.js</li>
+              </ul>
+            </div>
+            <p class="card-caption">Workflow / experimentation / local-first AI</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work" id="work" aria-labelledby="work-title">
+      <div class="page-width">
+        <header class="section-head">
+          <p class="section-index"><span>03</span> Selected work</p>
+          <h2 class="section-title" id="work-title">Ideas into<br><em>reality.</em></h2>
+          <p class="section-note">A few experiments that shaped how I think, build, and recover when things break.</p>
+        </header>
+
+        <div class="projects-list">
+          <article class="project project--jarvis">
+            <div class="project-media media-jarvis" role="img" aria-label="Abstract visual study of a futuristic AI assistant interface with orbital system rings and status panels" data-tilt data-tilt-max="2">
+              <div class="media-grid" aria-hidden="true"></div>
+              <div class="jarvis-topbar" aria-hidden="true">
+                <span>J.A.R.V.I.S</span>
+                <span class="jarvis-live"><i></i> VISUAL STUDY</span>
+                <span>PERSONAL AI / 01</span>
+              </div>
+              <div class="jarvis-orbit" aria-hidden="true">
+                <span class="jarvis-ring jarvis-ring--a"></span>
+                <span class="jarvis-ring jarvis-ring--b"></span>
+                <span class="jarvis-ring jarvis-ring--c"></span>
+                <span class="jarvis-sweep"></span>
+                <span class="jarvis-axis jarvis-axis--x"></span>
+                <span class="jarvis-axis jarvis-axis--y"></span>
+                <span class="jarvis-core">J</span>
+                <span class="jarvis-pulse"></span>
+                <span class="jarvis-node jarvis-node--a"></span>
+                <span class="jarvis-node jarvis-node--b"></span>
+                <span class="jarvis-node jarvis-node--c"></span>
+              </div>
+              <div class="jarvis-panel jarvis-panel--input" aria-hidden="true">
+                <span class="panel-label">INPUT</span>
+                <span class="signal-bars"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              </div>
+              <div class="jarvis-panel jarvis-panel--process" aria-hidden="true">
+                <span class="panel-label">PROCESS</span>
+                <p>LISTEN / INTERPRET</p>
+                <p>CONNECT / RESPOND</p>
+                <span class="panel-line"><i></i></span>
+              </div>
+              <div class="jarvis-panel jarvis-panel--status" aria-hidden="true">
+                <span class="panel-label">STATE</span>
+                <span class="status-text"><i></i> ACTIVE</span>
+              </div>
+              <span class="media-watermark" aria-hidden="true">AI</span>
+              <div class="media-foot" aria-hidden="true">
+                <span>INTERFACE DIRECTION / SYSTEM STUDY</span>
+                <span>ATTEMPT → FAIL → REBUILD</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker"><span>Project 01</span><span>Personal AI assistant experiment</span></p>
+              <h3 class="project-title">JARVIS <em>AI</em></h3>
+              <p class="project-description">An ambitious AI assistant project that pushed me to explore system design, application development, and AI integration. The project experienced multiple failures and iterations, but I continued debugging and rebuilding until I achieved a working implementation.</p>
+              <ul class="project-tags" aria-label="Project themes">
+                <li>System design</li>
+                <li>AI integration</li>
+                <li>Iteration</li>
+              </ul>
+              <a class="text-link" href="#chapter-jarvis">Read the build story <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9h10M9 4l5 5-5 5"/></svg></a>
+            </div>
+          </article>
+
+          <article class="project project--alvantix">
+            <div class="project-media media-alvantix" role="img" aria-label="Abstract visual study of an AI project environment with connected system nodes" data-tilt data-tilt-max="2">
+              <div class="media-grid" aria-hidden="true"></div>
+              <div class="alvantix-topbar" aria-hidden="true">
+                <span>ALVANTIX / AI</span>
+                <span>PROJECT EXPERIENCE</span>
+                <span>STUDY / 02</span>
+              </div>
+              <svg class="arch-lines" viewBox="0 0 800 500" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M136 128 C 260 128, 278 236, 390 248"/>
+                <path d="M664 124 C 552 124, 530 224, 414 246"/>
+                <path d="M150 380 C 278 380, 295 282, 390 258"/>
+                <path d="M652 384 C 540 384, 520 286, 414 258"/>
+                <path d="M400 68 C 400 126, 400 170, 400 214"/>
+                <path d="M400 292 C 400 336, 400 376, 400 430"/>
+              </svg>
+              <span class="arch-node arch-node--idea" aria-hidden="true"><i></i>IDEA</span>
+              <span class="arch-node arch-node--interface" aria-hidden="true"><i></i>INTERFACE</span>
+              <span class="arch-node arch-node--api" aria-hidden="true"><i></i>API</span>
+              <span class="arch-node arch-node--learning" aria-hidden="true"><i></i>LEARNING</span>
+              <div class="arch-core" aria-hidden="true">
+                <span class="arch-orbit"></span>
+                <span class="arch-letter">A</span>
+                <span class="arch-caption">ALVANTIX</span>
+              </div>
+              <div class="alvantix-sidepanel" aria-hidden="true">
+                <p><span>01</span>EXPLORE</p>
+                <p><span>02</span>BUILD</p>
+                <p><span>03</span>REFINE</p>
+              </div>
+              <span class="media-watermark" aria-hidden="true">A</span>
+              <div class="media-foot" aria-hidden="true">
+                <span>AI EXPERIENCE / SYSTEMS VIEW</span>
+                <span>CONNECT THE COMPONENTS</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker"><span>Project 02</span><span>AI project experience</span></p>
+              <h3 class="project-title">Alvantix <em>AI</em></h3>
+              <p class="project-description">My experience working on Alvantix AI, associated with the Alvantix startup, gave me an opportunity to contribute to an AI-focused project and continue exploring application development.</p>
+              <ul class="project-tags" aria-label="Project themes">
+                <li>AI project</li>
+                <li>Application development</li>
+                <li>Startup experience</li>
+              </ul>
+              <a class="text-link" href="#chapter-alvantix">Read the Alvantix chapter <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 9h10M9 4l5 5-5 5"/></svg></a>
+            </div>
+          </article>
+
+          <article class="project project--web">
+            <div class="project-media media-web" role="img" aria-label="Abstract visual study of layered web interfaces exploring layout, motion, and responsive design" data-tilt data-tilt-max="2">
+              <div class="media-grid" aria-hidden="true"></div>
+              <div class="web-topbar" aria-hidden="true">
+                <span>WEB / EXPERIMENTS</span>
+                <span>FRONTEND STUDIES</span>
+                <span>03</span>
+              </div>
+              <div class="web-window web-window--back" aria-hidden="true">
+                <span class="web-dots"><i></i><i></i><i></i></span>
+                <div class="web-skeleton">
+                  <span class="sk-line sk-line--short"></span>
+                  <span class="sk-line"></span>
+                  <span class="sk-line sk-line--mid"></span>
+                  <span class="sk-block"></span>
+                </div>
+              </div>
+              <div class="web-window web-window--mid" aria-hidden="true">
+                <span class="web-dots"><i></i><i></i><i></i></span>
+                <div class="web-mid-grid">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <span class="web-pill">MOTION</span>
+              </div>
+              <div class="web-window web-window--front" aria-hidden="true">
+                <span class="web-dots"><i></i><i></i><i></i></span>
+                <div class="web-hero-type">BUILD<br><em>WITH</em><br>INTENT.</div>
+                <span class="web-button">EXPLORE</span>
+                <span class="web-index">03 / UI</span>
+              </div>
+              <div class="web-cursor" aria-hidden="true"><span>CURSOR / PLAY</span></div>
+              <span class="web-tag web-tag--a">RESPONSIVE</span>
+              <span class="web-tag web-tag--b">ANIMATION</span>
+              <span class="web-tag web-tag--c">HTML / CSS / JS</span>
+              <span class="media-watermark" aria-hidden="true">UI</span>
+              <div class="media-foot" aria-hidden="true">
+                <span>INTERFACE EXPLORATIONS</span>
+                <span>DESIGN → BUILD → REFINE</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-kicker"><span>Project 03</span><span>Web development</span></p>
+              <h3 class="project-title">Web <em>experiments</em></h3>
+              <p class="project-description">A collection of web development experiments and applications exploring frontend interfaces, responsive design, animations, and interactive experiences.</p>
+              <ul class="project-tags" aria-label="Project themes">
+                <li>Frontend</li>
+                <li>Responsive design</li>
+                <li>Interaction</li>
+              </ul>
+              <a class="text-link" href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">Explore on GitHub <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M6 4h8v8"/></svg></a>
+            </div>
+          </article>
+        </div>
+
+        <aside class="github-callout reveal" aria-labelledby="github-title">
+          <div class="github-callout-copy">
+            <p class="section-index section-index--inline"><span>Open archive</span></p>
+            <h3 id="github-title">The work continues<br><em>on GitHub.</em></h3>
+            <p>Some projects are private or still in progress, so they may not be accessible to visitors. The public side of the process lives on GitHub.</p>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">
+            <span>Explore My GitHub</span>
+            <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M6 4h8v8"/></svg>
+          </a>
+          <span class="github-orbit" aria-hidden="true"></span>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey" aria-labelledby="journey-title">
+      <div class="page-width">
+        <header class="section-head">
+          <p class="section-index"><span>04</span> Development log</p>
+          <h2 class="section-title" id="journey-title">Failure to<br><em>progress.</em></h2>
+          <p class="section-note">A scroll through the attempts, errors, and small wins that changed the way I build.</p>
+        </header>
+      </div>
+
+      <div class="page-width journey-container">
+        <div class="journey-experience">
+          <div class="journey-stage-wrap">
+            <div class="journey-stage" id="journey-stage" aria-hidden="true">
+              <canvas id="journey-canvas"></canvas>
+              <div class="stage-noise"></div>
+              <div class="stage-chrome stage-chrome--top">
+                <span>DEV LOG / ITERATIONS</span>
+                <span class="stage-status"><i></i><span id="stage-status-label">ARCHIVE</span></span>
+                <span class="stage-format">SCROLL / 05</span>
+              </div>
+
+              <div class="stage-scenes">
+                <div class="stage-scene is-active" data-scene="0">
+                  <div class="scene-ambient scene-ambient--left"></div>
+                  <div class="code-window code-window--curiosity">
+                    <div class="code-bar"><span class="code-dots"><i></i><i></i><i></i></span><span>curiosity.js</span><span>01</span></div>
+                    <pre><code><span class="c-comment">// where it began</span>
+<span class="c-key">const</span> spark = <span class="c-str">'an idea'</span>;
+<span class="c-key">let</span> understanding = <span class="c-key">false</span>;
+
+<span class="c-key">while</span> (!understanding) {
+  learn();
+  experiment();
+  understanding = reflect();
+}</code></pre>
+                    <span class="code-caret"></span>
+                  </div>
+                  <p class="scene-label">FIRST CONTACT / LIGHT ON</p>
+                </div>
+
+                <div class="stage-scene" data-scene="1">
+                  <div class="scene-ambient scene-ambient--center"></div>
+                  <div class="attempt-stack">
+                    <div class="mini-window mini-window--fault">
+                      <div class="code-bar"><span class="code-dots"><i></i><i></i><i></i></span><span>attempt_01</span><span>×</span></div>
+                      <pre><code><span class="c-key">build</span> interface
+<span class="c-red">ReferenceError:</span> missing piece
+<span class="c-comment">process exited with code 1</span></code></pre>
+                    </div>
+                    <div class="mini-window mini-window--fault mini-window--offset">
+                      <div class="code-bar"><span class="code-dots"><i></i><i></i><i></i></span><span>attempt_02</span><span>×</span></div>
+                      <pre><code><span class="c-key">connect</span> the system
+<span class="c-red">SyntaxError:</span> unexpected token
+<span class="c-comment">process exited with code 1</span></code></pre>
+                    </div>
+                    <div class="attempt-banner"><i></i> BUILD FAILED <span>/</span> TRY AGAIN</div>
+                  </div>
+                  <p class="scene-label">ERROR LOG / RESET</p>
+                </div>
+
+                <div class="stage-scene" data-scene="2">
+                  <div class="scene-ambient scene-ambient--red"></div>
+                  <div class="jarvis-stage">
+                    <span class="stage-orbit stage-orbit--a"></span>
+                    <span class="stage-orbit stage-orbit--b"></span>
+                    <span class="stage-orbit stage-orbit--c"></span>
+                    <span class="stage-sweep"></span>
+                    <span class="stage-core">J</span>
+                    <span class="stage-cross stage-cross--x"></span>
+                    <span class="stage-cross stage-cross--y"></span>
+                  </div>
+                  <div class="jarvis-attempts">
+                    <div class="jarvis-attempt"><span>01</span><span>UNRESOLVED</span><i></i></div>
+                    <div class="jarvis-attempt"><span>02</span><span>RESET</span><i></i></div>
+                    <div class="jarvis-attempt"><span>03</span><span>ACTIVE</span><i></i></div>
+                  </div>
+                  <p class="scene-label">JARVIS / FINALLY ONLINE</p>
+                </div>
+
+                <div class="stage-scene" data-scene="3">
+                  <div class="scene-ambient scene-ambient--right"></div>
+                  <div class="experience-map">
+                    <div class="exp-panel exp-panel--browser">
+                      <div class="code-bar"><span class="code-dots"><i></i><i></i><i></i></span><span>alvantix / experience</span><span>↗</span></div>
+                      <div class="exp-browser-body">
+                        <span class="exp-mark">A</span>
+                        <span class="exp-line exp-line--lg"></span>
+                        <span class="exp-line"></span>
+                        <span class="exp-line exp-line--sm"></span>
+                        <span class="exp-chips"><i></i><i></i><i></i></span>
+                      </div>
+                    </div>
+                    <div class="exp-panel exp-panel--notes">
+                      <span class="panel-label">WHAT CHANGED</span>
+                      <p>New tools.<br>New constraints.<br>New perspective.</p>
+                      <span class="exp-note-rule"></span>
+                    </div>
+                    <span class="exp-node exp-node--a">WEB</span>
+                    <span class="exp-node exp-node--b">AI</span>
+                    <span class="exp-node exp-node--c">APIs</span>
+                    <svg class="exp-lines" viewBox="0 0 500 360" aria-hidden="true"><path d="M250 180 L95 82"/><path d="M250 180 L418 96"/><path d="M250 180 L360 296"/></svg>
+                  </div>
+                  <p class="scene-label">EXPANDING THE FRAME</p>
+                </div>
+
+                <div class="stage-scene" data-scene="4">
+                  <div class="scene-ambient scene-ambient--center"></div>
+                  <div class="convergence">
+                    <svg class="convergence-lines" viewBox="0 0 500 360" aria-hidden="true">
+                      <path d="M250 180 L80 70"/><path d="M250 180 L180 40"/><path d="M250 180 L330 52"/>
+                      <path d="M250 180 L420 90"/><path d="M250 180 L90 290"/><path d="M250 180 L190 330"/>
+                      <path d="M250 180 L340 320"/><path d="M250 180 L420 270"/>
+                    </svg>
+                    <span class="convergence-node cn-1"></span><span class="convergence-node cn-2"></span>
+                    <span class="convergence-node cn-3"></span><span class="convergence-node cn-4"></span>
+                    <span class="convergence-node cn-5"></span><span class="convergence-node cn-6"></span>
+                    <span class="convergence-node cn-7"></span><span class="convergence-node cn-8"></span>
+                    <div class="convergence-core"><span>SS</span></div>
+                    <span class="convergence-caption">STILL BUILDING</span>
+                  </div>
+                  <p class="scene-label">THE STRUCTURE EMERGES</p>
+                </div>
+              </div>
+
+              <div class="stage-chrome stage-chrome--bottom">
+                <span id="stage-scene-label">CURIOSITY</span>
+                <span class="stage-progress"><i id="stage-progress"></i></span>
+                <span class="stage-count"><span id="stage-current">01</span> / 05</span>
+              </div>
+            </div>
+            <p class="journey-stage-caption">The process, not just the outcome.</p>
+          </div>
+
+          <div class="journey-chapters" id="journey-chapters">
+            <article class="chapter" id="chapter-curiosity" data-chapter="0">
+              <div class="chapter-top"><span class="chapter-number">Chapter 01</span><span class="chapter-line" aria-hidden="true"></span><span class="chapter-tag">Origin</span></div>
+              <h3 class="chapter-title reveal">Curiosity</h3>
+              <p class="chapter-text reveal">Every journey begins with an idea. Mine began with curiosity and a desire to understand how technology works.</p>
+            </article>
+
+            <article class="chapter" id="chapter-attempts" data-chapter="1">
+              <div class="chapter-top"><span class="chapter-number">Chapter 02</span><span class="chapter-line" aria-hidden="true"></span><span class="chapter-tag">Attempts</span></div>
+              <h3 class="chapter-title reveal">The First Attempts</h3>
+              <p class="chapter-text reveal">Not every idea worked the first time. I encountered errors, faced unexpected challenges, and learned that building software requires patience as much as creativity.</p>
+            </article>
+
+            <article class="chapter" id="chapter-jarvis" data-chapter="2">
+              <div class="chapter-top"><span class="chapter-number">Chapter 03</span><span class="chapter-line" aria-hidden="true"></span><span class="chapter-tag">Breakthrough</span></div>
+              <h3 class="chapter-title reveal">JARVIS AI</h3>
+              <p class="chapter-text reveal">JARVIS AI became one of my most challenging experiments. I failed multiple times, tried again, debugged problems, and kept improving the implementation. Eventually, I got it working. That experience showed me the value of persistence and learning through failure.</p>
+            </article>
+
+            <article class="chapter" id="chapter-alvantix" data-chapter="3">
+              <div class="chapter-top"><span class="chapter-number">Chapter 04</span><span class="chapter-line" aria-hidden="true"></span><span class="chapter-tag">Experience</span></div>
+              <h3 class="chapter-title reveal">Expanding My Experience</h3>
+              <p class="chapter-text reveal">Each project introduced new challenges and opportunities to learn. From AI experimentation to web development, I continued exploring how ideas become real applications.</p>
+            </article>
+
+            <article class="chapter" id="chapter-continues" data-chapter="4">
+              <div class="chapter-top"><span class="chapter-number">Chapter 05</span><span class="chapter-line" aria-hidden="true"></span><span class="chapter-tag">Ongoing</span></div>
+              <h3 class="chapter-title reveal">The Journey Continues</h3>
+              <p class="chapter-text reveal">I am still learning, still experimenting, and still building. My goal is to keep improving my technical abilities and create useful digital experiences.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
+      <div class="page-width philosophy-layout">
+        <div class="philosophy-intro">
+          <p class="section-index"><span>05</span> Principles</p>
+          <h2 class="section-title" id="philosophy-title">Beyond<br><em>development.</em></h2>
+          <p class="section-note">Not slogans. The rules I return to when the work gets difficult.</p>
+          <span class="philosophy-mark" aria-hidden="true">SS / 2026</span>
+        </div>
+
+        <ol class="principles">
+          <li class="principle reveal">
+            <span class="principle-index">P.01</span>
+            <p class="principle-text">Build with <em>curiosity.</em></p>
+            <span class="principle-end" aria-hidden="true">+</span>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-index">P.02</span>
+            <p class="principle-text">Learn through <em>experimentation.</em></p>
+            <span class="principle-end" aria-hidden="true">+</span>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-index">P.03</span>
+            <p class="principle-text">Debug with <em>patience.</em></p>
+            <span class="principle-end" aria-hidden="true">+</span>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-index">P.04</span>
+            <p class="principle-text">Fail. Understand. <em>Rebuild.</em></p>
+            <span class="principle-end" aria-hidden="true">+</span>
+          </li>
+          <li class="principle reveal">
+            <span class="principle-index">P.05</span>
+            <p class="principle-text">Keep moving <em>forward.</em></p>
+            <span class="principle-end" aria-hidden="true">+</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-signal" aria-hidden="true">
+        <span class="signal-ring signal-ring--a"></span>
+        <span class="signal-ring signal-ring--b"></span>
+        <span class="signal-ring signal-ring--c"></span>
+        <span class="signal-core"></span>
+      </div>
+      <div class="page-width contact-grid">
+        <div class="contact-main">
+          <p class="section-index"><span>06</span> Open channel</p>
+          <h2 class="section-title contact-title" id="contact-title">Have an idea<br><em>worth building?</em></h2>
+          <p class="contact-lede reveal">I'm interested in technology, AI experiments, software development, and opportunities to learn through meaningful projects.</p>
+          <div class="contact-actions reveal">
+            <a class="btn btn-primary" href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">
+              <span>Connect on GitHub</span>
+              <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M4 14 14 4M6 4h8v8"/></svg>
+            </a>
+            <button class="btn btn-quiet" type="button" id="copy-github" data-copy="https://github.com/25na1a0547lingayas-collab">
+              <span class="copy-label">Copy GitHub URL</span>
+              <svg class="copy-icon" viewBox="0 0 18 18" aria-hidden="true"><rect x="6" y="6" width="9" height="9"/><path d="M12 6V3H3v9h3"/></svg>
+            </button>
+            <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <aside class="contact-details reveal" aria-label="Contact details">
+          <div class="contact-detail">
+            <span class="detail-label">Based in</span>
+            <p>Vijayawada,<br>Andhra Pradesh, India</p>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Find me</span>
+            <p><a class="inline-link" href="https://github.com/25na1a0547lingayas-collab" target="_blank" rel="noopener noreferrer">GitHub /<br>25na1a0547lingayas-collab <span aria-hidden="true">↗</span></a></p>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-label">Focus</span>
+            <p>AI experiments<br>Web development<br>Learning through building</p>
+          </div>
+          <p class="contact-note">For project conversations and collaboration, GitHub is the clearest way to reach me.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="finale" id="finale" aria-labelledby="finale-title">
+      <canvas id="finale-canvas" aria-hidden="true"></canvas>
+      <div class="finale-atmosphere" aria-hidden="true">
+        <span class="finale-beam finale-beam--a"></span>
+        <span class="finale-beam finale-beam--b"></span>
+        <span class="finale-sweep"></span>
+      </div>
+
+      <div class="page-width finale-inner">
+        <p class="finale-kicker reveal">End of the page. Start of the next build.</p>
+
+        <h2 class="finale-name reveal" id="finale-title">
+          <span class="finale-line" data-depth="SriHarsha"><span>SriHarsha</span></span>
+          <span class="finale-line finale-line--italic" data-depth="Samala"><span>Samala</span></span>
+        </h2>
+
+        <p class="finale-role reveal">Developer · AI Enthusiast · Lifelong Learner</p>
+
+        <div class="finale-copy reveal">
+          <p>I build. I experiment. I fail. I learn. I try again. <br>Every project is a lesson. Every challenge is an opportunity to improve. <br>And every new idea is another reason to build.</p>
+        </div>
+
+        <p class="finale-thanks reveal"><span aria-hidden="true"></span>Thank you for exploring my journey.<span aria-hidden="true"></span></p>
+
+        <a class="btn btn-finale back-to-top reveal" href="#top">
+          <svg viewBox="0 0 18 18" aria-hidden="true"><path d="M9 14V4M4 8l5-5 5 5"/></svg>
+          <span>Back to Top</span>
+        </a>
+      </div>
+
+      <footer class="finale-footer page-width">
+        <div class="footer-brand">
+          <span class="brand-mark brand-mark--small" aria-hidden="true">SS</span>
+          <p>SriHarsha Samala<br><span>Developer · Learner · Builder</span></p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-meta">Vijayawada, India<br>© 2026 SriHarsha Samala</p>
+      </footer>
+      <div class="finale-fade" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <script src="js/journey.js"></script>
+  <script src="js/finale.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
